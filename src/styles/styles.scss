@@ -1,0 +1,93 @@
+$primary-color: #db8316;
+$background-color: #f4f4f4;
+$text-color: #333;
+$card-bg-color: #fff;
+$card-border-color: #ddd;
+$card-shadow: rgba(0, 0, 0, 0.1);
+$hover-bg-color: #e67e22;
+$nav-bg-color: #333;
+$nav-link-color: #fff;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+}
+
+h1 {
+    color: $primary-color;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* App Bar */
+.app-bar {
+    background-color: $nav-bg-color;
+    color: $nav-link-color;
+    border-bottom: 2px solid;
+}
+
+.nav-menu a {
+    color: $nav-link-color;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $hover-bg-color;
+        border-radius: 4px;
+    }
+}
+
+/* Kartu Restoran */
+.restaurant-card {
+    background-color: $card-bg-color;
+    border: 1px solid $card-border-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px $card-shadow;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px $card-shadow;
+    }
+}
+
+/* Form Pencarian */
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+    #search-input {
+        padding: 10px;
+        border: 1px solid $card-border-color;
+        border-radius: 5px 0 0 5px;
+
+        &:focus {
+            border-color: $primary-color;
+            outline: none;
+        }
+    }
+    
+    button[type="submit"] {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover {
+            background-color: $hover-bg-color;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    background-color: $nav-bg-color;
+    color: $nav-link-color;
+}
+
+/* Media Queries */
+@media screen and (min-width: 700px) {
+    .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

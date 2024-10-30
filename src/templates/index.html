@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger Apps</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <!-- App Bar (Navigation) -->
+    <header>
+        <nav class="app-bar">
+            <a href="/" class="app-logo" aria-label="Homepage">Hunger Apps</a>
+            <button id="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+            <ul id="menu" class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="https://linkedin.com/in/tifaamalina">About Us</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <!-- Hero Element -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <img src="./images/heros/hero-image_1.jpg" alt="Restaurant showcase" class="hero-image">
+        <div class="hero-text">
+            <h1 id="hero-heading">Selamat Datang di RestoFinder</h1>
+            <p>Temukan restoran terbaik di dekat Anda</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <h2 class="visually-hidden">Daftar Restoran</h2> <!-- Hidden heading for screen readers -->
+
+        <!-- Form Pencarian Restoran -->
+        
+        <form id="search-form" aria-label="Search Restaurants">
+            <label for="search-input" class="visually-hidden"></label>
+            <input type="text" id="search-input" placeholder="Cari restoran..." aria-required="true">
+            <button type="submit">Cari</button>
+        </form>                      
+
+        <ul id="restaurant-list"></ul>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &#169; 2024 - Hunger Apps</p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
